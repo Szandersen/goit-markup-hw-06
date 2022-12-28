@@ -550,6 +550,25 @@
                         </li>
                     </ul>
                 </div>
+
+                <div class="footer-newsletter">
+                    <h2>ZAPISZ SIĘ DO NASZEGO NEWSLETTERA</h2>
+                    <form class="mail-sub">
+                        <input
+                            class="subscription-form"
+                            type="email"
+                            name="input-footer-email"
+                            placeholder="E-mail"
+                            required
+                        />
+                        <button class="footer-newsletter-button" type="submit">
+                            <span class="ft-btn-text">Zapisz się</span>
+                            <svg class="send-icon" width="24" height="24">
+                                <use href="/img/icons.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
         </footer>
 
@@ -558,6 +577,61 @@
                 <button type="button" class="close-btn" data-modal-close>
                     X
                 </button>
+                <form class="modal-form">
+                    <h2>Zostaw swoje dane w formularzu poniżej</h2>
+                    <label class="modal-name-field">Imie</label>
+                    <input
+                        type="text"
+                        name="client-name"
+                        class="form-area"
+                        minlength="3"
+                        required
+                        pattern="^[a-zA-Z]+\s[a-zA-z]+$"
+                    />
+                    <svg class="form-icon" width="18px" height="18px">
+                        <use href="./img/icons.svg#icon-person"></use>
+                    </svg>
+                    <label class="modal-name-field">Telefon</label>
+                    <input
+                        type="tel"
+                        name="phone-number"
+                        class="form-area"
+                        minlength="9"
+                        required
+                        pattern="[0-9\+\-]{9,15}"
+                    />
+                    <svg class="form-icon" width="18px" height="18px">
+                        <use href="./img/icons.svg#icon-phone"></use>
+                    </svg>
+                    <label class="modal-name-field">Email</label>
+                    <input
+                        type="email"
+                        name="email"
+                        class="form-area"
+                        required
+                    />
+                    <svg class="form-icon" width="18px" height="18px">
+                        <use href="./img/icons.svg#icon-emailform"></use>
+                    </svg>
+                    <label class="modal-name-field">Komentarz</label>
+                    <textarea
+                        placeholder="Wprowadź tekst"
+                        name="comment"
+                        class="form-area-comment"
+                    ></textarea>
+                    <label class="regulations-form">
+                        <input
+                            type="checkbox"
+                            name="checkbox-acceptance"
+                            class="modal-checkbox-form"
+                        />
+                        <span class="regulations-form-text"
+                            >Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+                            <a href="#">Politykę Prywatności.</a></span
+                        ></label
+                    >
+                    <button class="modal-form-btn" type="submit">Wyślij</button>
+                </form>
             </div>
         </div>
         <script src="./js/modal.js"></script>
