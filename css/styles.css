@@ -660,6 +660,8 @@ address {
 .is-hidden .modal {
     transform: translateY(-150%);
 }
+.modal-form {
+}
 .modal-form h2 {
     /* font-style: bold; */
     font-size: 20px;
@@ -690,6 +692,8 @@ address {
 .form-area:hover,
 .form-area:focus {
     border-color: var(--blue-text);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-area:hover + svg,
 .form-area:focus + svg {
@@ -717,6 +721,8 @@ address {
 .form-area-comment:hover,
 .form-area-comment:focus {
     border-color: var(--blue-text);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     outline: none;
 }
 .form-icon {
@@ -735,14 +741,17 @@ address {
 .regulations-form {
     position: relative;
     display: block;
+    padding: 0 54px;
     margin-bottom: 30px;
     text-align: center;
     align-items: center;
+    gap: 7px;
 }
 .regulations-form input[type='checkbox'] {
-    background: #ffffff;
+    /* background: #ffffff; */
     margin-right: 9px;
-    appearance: none;
+    /* appearance: none; */
+    display: none;
     height: 16px;
     height: 16px;
     border: 2px solid #757575;
