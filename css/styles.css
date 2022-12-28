@@ -603,7 +603,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--white-background);
-    margin-right: 24px;
+    margin-right: 28px;
 }
 .footer-newsletter-button:hover,
 .footer-newsletter-button:focus {
@@ -691,8 +691,8 @@ address {
 .form-area:focus {
     border-color: var(--blue-text);
 }
-.form-area:hover svg,
-.form-area:focus svg {
+.form-area:hover + svg,
+.form-area:focus + svg {
     fill: var(--blue-text);
     transition: border-color var(--blue-text);
     transition-duration: 250ms;
@@ -717,17 +717,21 @@ address {
 .form-area-comment:hover,
 .form-area-comment:focus {
     border-color: var(--blue-text);
+    outline: none;
 }
 .form-icon {
     position: absolute;
     left: 55px;
     margin-top: 20px;
     transform: translateY(-50%);
-    fill: var(--grey-background);
+}
+.form-icon:hover svg,
+.form-icon:focus svg {
+    fill: var(--blue-text);
+    transition: border-color var(--blue-text);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .regulations-form {
     position: relative;
     display: block;
@@ -752,7 +756,7 @@ address {
 }
 .regulations-form svg {
     position: absolute;
-    top: 37%;
+    top: 50%;
     left: 12.45%;
     border-radius: 4px;
     transform: translateY(-50%);
